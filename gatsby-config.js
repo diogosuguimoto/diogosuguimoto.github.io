@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-      title: `Diogo Eij Suguimoto`,
+      title: `JoySpot`,
     },
     plugins: [
       `gatsby-plugin-emotion`,

@@ -6,8 +6,12 @@
 # testing
 /coverage
 
+# cache
+.cache
+
 # production
 /build
+/public
 
 # misc
 .DS_Store

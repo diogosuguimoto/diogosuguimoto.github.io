@@ -1,9 +1,6 @@
 import React, { Fragment } from 'react'
+import Helmet from "react-helmet"
 import { css, keyframes, Global } from "@emotion/core"
-import { ReactComponent as Github } from '../images/github.svg'
-import { ReactComponent as Twitter } from '../images/twitter.svg'
-import { ReactComponent as Facebook } from '../images/facebook.svg'
-import { ReactComponent as Linkedin } from '../images/linkedin.svg'
 
 const globalStyles = css`
   *,
@@ -39,55 +36,31 @@ const sectionStyles = css`
 `
 
 const styles = css`
-  padding: 60px 30px;
+  display: flex;
+  width: 65%;
+  height: 65%;
   background-color: white;
   box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.4);
   border-radius: 5px;
   z-index: 10;
-  text-align: center;
+  align-items: center;
 
   p {
+    margin: 0 auto;
     font-size: 1.5em;
     margin-bottom: 30px;
-  }
-`
-
-const footerStyles = css`
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-
-  a {
-    margin: 0 15px;
-  }
-
-  svg {
-    width: 30px;
-    height: 30px;
   }
 `
 
 export default () =>
   <Fragment>
     <Global styles={globalStyles} />
+    <Helmet>
+      <meta name="google-site-verification" content="F57X00jezeBSi2u7xriTfe49OBHS_bTrInElpUAw5zk" />
+    </Helmet>
     <section css={sectionStyles}>
       <div css={styles}>
-        <p>Hi! I'm <strong>Diogo Eiji Suguimoto</strong>, passionate about coding and marine life</p>
-        <p>Living in Rio de Janeiro, Brazil</p>
-        <div css={footerStyles}>
-          <a title="Github" href="https://github.com/diogosuguimoto">
-            <Github />
-          </a>
-          <a title="Facebook" href="https://facebook.com/diogoeiji">
-            <Facebook />
-          </a>
-          <a title="Twitter" href="https://twitter.com/EijiDiogo">
-            <Twitter />
-          </a>
-          <a title="Linkedin" href="https://www.linkedin.com/in/diogoeiji">
-            <Linkedin />
-          </a>
-        </div>
+        <p><strong>Em construção...</strong></p>
       </div>
     </section>
   </Fragment>
